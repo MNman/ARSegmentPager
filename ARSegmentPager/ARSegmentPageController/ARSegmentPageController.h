@@ -10,9 +10,9 @@
 #import "ARSegmentPageControllerHeaderProtocol.h"
 #import "ARSegmentPageHeader.h"
 #import <UIKit/UIKit.h>
-
-@class ARSegmentView;
-@interface ARSegmentPageController : UIViewController
+#import "XMBaseViewController.h"
+@class ARSegmentView,XMBaseViewController;
+@interface ARSegmentPageController : XMBaseViewController
 
 @property(nonatomic, assign) CGFloat segmentHeight; // should be greater than 0
 @property(nonatomic, assign) CGFloat headerHeight; // should be greater than 0
